@@ -1,3 +1,5 @@
 mosesdecoder/
 boost*/
 boost_*
+data*/
+out*
