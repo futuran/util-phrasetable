@@ -53,9 +53,10 @@ class AllPhrase:
         self.phrases = []
         self.phrase_num = 0
 
-        self.adj_weight = [] 
-        self.adj_row = []
-        self.adj_col = []
+        # アライメントが0だと実験時にエラーが出るので便宜的に0-0を追加
+        self.adj_weight = [1] 
+        self.adj_row = [0]
+        self.adj_col = [0]
 
     def convert_to_coo(self, size):
         self.adj_coo = scipy.sparse.coo_matrix((self.adj_weight,(self.adj_row, self.adj_col)), 
