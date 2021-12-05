@@ -88,7 +88,7 @@ class AllPhrase:
             print(f'{phrase.ja_phrase_length=}')
 
     def merge(self):
-        self.input_sentence = self.en_sentence + ' [sep] '
+        self.input_sentence = self.en_sentence + ' <sep> '
         #self.input_sentence += ' '.join([x.ja_phrase for x in self.phrases])
         #print(self.input_sentence)
 

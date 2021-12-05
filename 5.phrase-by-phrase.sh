@@ -1,4 +1,4 @@
-for type in tail;
+for type in tail head;
 do
 
     python 5.phrase-by-phrase.py -s data_${type}/train_${type}.src \
