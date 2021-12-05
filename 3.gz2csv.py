@@ -13,7 +13,7 @@ def gz_to_csv(args):
         out_tmp = []
         out_tmp.append(tmp[0].strip())  # English Phrase
         out_tmp.append(tmp[1].strip())  # Japanese Phrase
-        for x in tmp[2].strip().split():# 確率
+        for x in tmp[2].strip().split():# 確率 phi_fe
             out_tmp.append(x)
         out_tmp.append(tmp[3].strip())
         out_tmp.append(tmp[4].strip())
